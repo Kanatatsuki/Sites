@@ -15,10 +15,9 @@
 	set mySQL root password : 1234abcd
 
 
-chromephp [/Users/kanatatsuki/pear/share/pear] ChromePhp.php
-sublime php Build: 
-	{
-	"cmd": ["/usr/bin/php", "-f", "$file"]
+~ chromephp [/Users/kanatatsuki/pear/share/pear] ChromePhp.php
+~ sublime php Build: 
+	{	"cmd": ["/usr/bin/php", "-f", "$file"]
 	}
-
+~ php error_report: error_reporting(E_ALL)
 
