@@ -12,23 +12,38 @@
     include_once 'php_methods.php';
     include_once 'php_objects.php';
 
-	error_reporting(0);
-    // error_reporting(E_ALL);
+	//error_reporting(0);
+    error_reporting(E_ALL);
 
 // Main 
-	$a = new User('li');
-	$b = new User_Student('liu', '03551');
+    // $a = new User('li');
+    // $a->show();
 
-	echo User::$user_number; echo '<br />';
-	echo User_Student::$user_number; echo '<br />';
+    // $a->set_user_info('a', 'aaa');
+   	// $a->set_user_info('c', 'ccc');
+   	// $a->set_user_info('b', 'bbb');
 
-	print_r($a); echo '<br />';
-	print_r($b); echo '<br />';
+   	// $a->show_user_info();
+   	
+   	// sort($a->user_info, SORT_STRING);
+   	// $a->show_user_info();
 
-	$a->show();
-	$b->show();
-	
+   	// shuffle($a->user_info);
+   	// $a->show_user_info();
 
-	
+    // $a->set_intro("I was a good man.");
+    // $a->split_intro();   
+   		
+    // $a->user_compact();
+    // $a->user_extract();
+    // echo '<pre>';
+    //   $a = sprintf("<font color='#%X%X%X'>", 200, 180, 32);
+    //   $a .= sprintf("test %s,\n %d, %X", 'Simom', 33, 33);
+    //   $a .= sprintf("</font>");
 
-?>
+    //   echo $a;
+    // echo '</pre>';
+    echo time(); echo '<br />';
+    echo mktime(17, 47, 17, 1, 19, 2014);
+
+ ?>
