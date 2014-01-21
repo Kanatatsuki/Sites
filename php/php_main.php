@@ -8,6 +8,9 @@
     */
 //** chromephp END
 
+
+
+
 // Header
     include_once 'php_methods.php';
     include_once 'php_objects.php';
@@ -46,11 +49,14 @@
 
   if(!$_FILES['filename']['error']){
     $name = $_FILES['filename']['name'];
+    
     move_uploaded_file($_FILES['filename']['tmp_name'], $name);
 
     echo '<pre>';
+      echo "<img src='$name' /> \n";
       print_r($_FILES);
     echo '</pre>';
+
   }
 
- ?>
+?>
