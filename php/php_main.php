@@ -43,7 +43,14 @@
 
     //   echo $a;
     // echo '</pre>';
-    echo time(); echo '<br />';
-    echo mktime(17, 47, 17, 1, 19, 2014);
+
+  if(!$_FILES['filename']['error']){
+    $name = $_FILES['filename']['name'];
+    move_uploaded_file($_FILES['filename']['tmp_name'], $name);
+
+    echo '<pre>';
+      print_r($_FILES);
+    echo '</pre>';
+  }
 
  ?>
